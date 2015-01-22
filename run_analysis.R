@@ -48,7 +48,7 @@ levels(final_meanstd$Activity)
 library(dplyr)
 final_tbl<-tbl_df(final_meanstd)
 #Next group by Subject_ID then Activity and finally summarize using summarize
-final_tidy<-final_tbl %>% 
+final_tdy<-final_tbl %>% 
     group_by(Student_ID,Activity) %>%
     summarise_each(funs(mean))
 #Write out to text file
